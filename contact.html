@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us</title>
+  <title>Contáctanos</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
 </head>
@@ -18,29 +18,29 @@
   <!-- Main Section -->
   <main class="flex-grow p-6">
     <section class="max-w-3xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
       <p class="mb-4">
-        We would love to hear from you! Please fill out the form below to get in touch with us. Your feedback, inquiries, or suggestions are important, and our team is here to assist you in any way possible.
+        ¡Nos encantaría saber de ti! Por favor, completa el siguiente formulario para ponerte en contacto con nosotros. Tu opinión, consultas o sugerencias son importantes, y nuestro equipo está aquí para ayudarte en todo lo que necesites.
       </p>
       <form id="form" class="space-y-4">
         <div>
-          <label for="name" class="block text-lg font-medium mb-2">Name</label>
+          <label for="name" class="block text-lg font-medium mb-2">Nombre</label>
           <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
         </div>
         <div>
-          <label for="email" class="block text-lg font-medium mb-2">Email</label>
+          <label for="email" class="block text-lg font-medium mb-2">Correo Electrónico</label>
           <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
         </div>
         <div>
-          <label for="subject" class="block text-lg font-medium mb-2">Subject</label>
+          <label for="subject" class="block text-lg font-medium mb-2">Asunto</label>
           <input type="text" id="subject" name="subject" required class="w-full p-2 border border-gray-300 rounded">
         </div>
         <div>
-          <label for="message" class="block text-lg font-medium mb-2">Message</label>
+          <label for="message" class="block text-lg font-medium mb-2">Mensaje</label>
           <textarea id="message" name="message" rows="5" required class="w-full p-2 border border-gray-300 rounded"></textarea>
         </div>
         <div>
-          <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
+          <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Enviar Mensaje</button>
         </div>
       </form>
     </section>
@@ -50,21 +50,21 @@
   <footer class="bg-gray-800 text-white p-4">
     <div class="max-w-3xl mx-auto text-center">
       <nav class="mb-4">
-        <a href="about.html" class="mx-2 hover:underline">About Us</a>
-        <a href="contact.html" class="mx-2 hover:underline">Contact Us</a>
-        <a href="privacy.html" class="mx-2 hover:underline">Privacy Policy</a>
-        <a href="terms.html" class="mx-2 hover:underline">Terms and Conditions</a>
+        <a href="about.html" class="mx-2 hover:underline">Sobre Nosotros</a>
+        <a href="contact.html" class="mx-2 hover:underline">Contáctanos</a>
+        <a href="privacy.html" class="mx-2 hover:underline">Política de Privacidad</a>
+        <a href="terms.html" class="mx-2 hover:underline">Términos y Condiciones</a>
       </nav>
       <div class="text-sm">
         <p>
-          CIN - U01631KA2010PTC096843 <br>
-          Address - 2, Western Urban Rd, Davri Nagar, Siddharth Nagar, <br>
-          Santacruz East, Mumbai, Maharashtra 400055, India <br>
-          Phone - 0674 2702416 <br>
+          CNPJ: 78.989.613/0001-90 <br>
+          Inscrição Estadual: 8324829-77 <br>
+          Endereço: 974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516 <br>
+          Número de telefone: (75) 2871-8215 <br>
         </p>
         <br>
         <p>
-          © 2025 Ultimate Agency Services. All rights reserved.
+          © 2025 Ultimate Agency Services. Todos los derechos reservados.
         </p>
       </div>
     </div>
@@ -76,7 +76,7 @@
         document.getElementById("form").innerHTML = '<img src="files/loading.gif" width="80">';
   
         setTimeout(() => {
-            document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700;">Thank you for your message.</p>';
+            document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700;">Gracias por tu mensaje.</p>';
         }, 2000);
     });
   </script>

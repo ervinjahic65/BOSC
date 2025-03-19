@@ -969,14 +969,6 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <ul class="slick-dots"  role="tablist">
-                                                                                        <li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 6" tabindex="-1">1</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide11" aria-label="2 of 6" tabindex="-1">2</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide12" aria-label="3 of 6" tabindex="-1">3</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control13" aria-controls="slick-slide13" aria-label="4 of 6" tabindex="-1">4</button></li>
-                                                                                        <li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control14" aria-controls="slick-slide14" aria-label="5 of 6" tabindex="0" aria-selected="true">5</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control15" aria-controls="slick-slide15" aria-label="6 of 6" tabindex="-1">6</button></li>
-                                                                                    </ul>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1265,14 +1257,6 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                    <ul class="slick-dots"  role="tablist">
-                                                                                        <li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control30" aria-controls="slick-slide30" aria-label="1 of 6" tabindex="-1">1</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control31" aria-controls="slick-slide31" aria-label="2 of 6" tabindex="-1">2</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control32" aria-controls="slick-slide32" aria-label="3 of 6" tabindex="-1">3</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control33" aria-controls="slick-slide33" aria-label="4 of 6" tabindex="-1">4</button></li>
-                                                                                        <li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control34" aria-controls="slick-slide34" aria-label="5 of 6" tabindex="0" aria-selected="true">5</button></li>
-                                                                                        <li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control35" aria-controls="slick-slide35" aria-label="6 of 6" tabindex="-1">6</button></li>
-                                                                                    </ul>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -1522,6 +1506,60 @@
                 formElement.scrollIntoView({ behavior: "smooth" });
               }
             }
-        </script>          
+        </script>
+        <!-- Swiper CDN Script Tag -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+           document.addEventListener('DOMContentLoaded', function() {
+                // Select all carousels with the provided class
+                var carousels = document.querySelectorAll('.ct-slick-carousel');
+                
+                carousels.forEach(function(carousel) {
+                    // Ensure the container hides overflow so only the centered slide is visible
+                    carousel.style.overflow = 'hidden';
+                    
+                    // Find the slick-track element and convert it to the Swiper wrapper
+                    var slickTrack = carousel.querySelector('.slick-track');
+                    if (slickTrack) {
+                    slickTrack.classList.add('swiper-wrapper');
+                    
+                    // Update each slide: add the swiper-slide class and remove fixed width
+                    var slides = slickTrack.querySelectorAll('.slick-slide');
+                    slides.forEach(function(slide) {
+                        slide.classList.add('swiper-slide');
+                        // Remove inline width and force the slide to take full container width
+                        slide.style.width = "100%";
+                    });
+                    
+                    // If there's an extra wrapper (.slick-list), replace it with the slickTrack
+                    var slickList = carousel.querySelector('.slick-list');
+                    if (slickList) {
+                        slickList.parentNode.replaceChild(slickTrack, slickList);
+                    }
+                    }
+                    
+                    // Create and append a pagination element for Swiper
+                    var pagination = document.createElement('div');
+                    pagination.className = 'swiper-pagination';
+                    carousel.appendChild(pagination);
+                    
+                    // Initialize Swiper ensuring only one full slide is visible
+                    var swiper = new Swiper(carousel, {
+                    loop: true,
+                    slidesPerView: 1,       // Show only one slide at a time
+                    spaceBetween: 0,        // No spacing between slides
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    speed: 500,
+                    pagination: {
+                        el: pagination,
+                        clickable: true,
+                    },
+                    });
+                });
+            });
+        </script>
     </body>
 </html>

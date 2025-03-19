@@ -129,4 +129,10 @@ img.wp-smiley, img.emoji {
                     height: 0;
                     }
 
-                    
+                    .company-info-cutom a {
+                        color: #FFF !important;
+                    }
+
+                    .company-info-cutom a:hover {
+                        text-decoration: underline !important;
+                    }

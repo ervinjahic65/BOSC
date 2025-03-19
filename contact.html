@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-10 flex items-center">
+    <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-10 mr-4">
+    </a>
+  </header>
+
+  <!-- Main Section -->
+  <main class="flex-grow p-6">
+    <section class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+      <p class="mb-4">
+        We would love to hear from you! Please fill out the form below to get in touch with us. Your feedback, inquiries, or suggestions are important, and our team is here to assist you in any way possible.
+      </p>
+      <form id="form" class="space-y-4">
+        <div>
+          <label for="name" class="block text-lg font-medium mb-2">Name</label>
+          <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="email" class="block text-lg font-medium mb-2">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="subject" class="block text-lg font-medium mb-2">Subject</label>
+          <input type="text" id="subject" name="subject" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="message" class="block text-lg font-medium mb-2">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <nav class="mb-4">
+        <a href="about.html" class="mx-2 hover:underline">About Us</a>
+        <a href="contact.html" class="mx-2 hover:underline">Contact Us</a>
+        <a href="privacy.html" class="mx-2 hover:underline">Privacy Policy</a>
+        <a href="terms.html" class="mx-2 hover:underline">Terms and Conditions</a>
+      </nav>
+      <div class="text-sm">
+        <p>
+          CIN - U01631KA2010PTC096843 <br>
+          Address - 2, Western Urban Rd, Davri Nagar, Siddharth Nagar, <br>
+          Santacruz East, Mumbai, Maharashtra 400055, India <br>
+          Phone - 0674 2702416 <br>
+        </p>
+        <br>
+        <p>
+          © 2025 {Company}. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        document.getElementById("form").innerHTML = '<img src="files/loading.gif" width="80">';
+  
+        setTimeout(() => {
+            document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700;">Thank you for registering. A representative will contact you shortly.</p>';
+        }, 2000);
+    });
+  </script>
+</body>
+</html>

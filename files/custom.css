@@ -136,3 +136,10 @@ img.wp-smiley, img.emoji {
                     .company-info-cutom a:hover {
                         text-decoration: underline !important;
                     }
+
+                    @media only screen and (max-width: 600px) {
+                        .footer-up, .footer-down {
+                            width: unset !important;
+                            left: 0 !important;
+                        }
+                      }

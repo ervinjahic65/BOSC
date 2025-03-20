@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contattaci</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-10 flex items-center">
+    <a href="index.html">
+        <img src="files/logo.png" alt="Logo" class="h-10 mr-4">
+    </a>
+  </header>
+
+  <!-- Main Section -->
+  <main class="flex-grow p-6">
+    <section class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Contattaci</h2>
+      <p class="mb-4">
+        Ci farebbe piacere sentirti! Compila il modulo sottostante per metterti in contatto con noi. Il tuo feedback, le tue domande o suggerimenti sono importanti, e il nostro team è qui per aiutarti in ogni modo possibile.
+      </p>
+      <form id="form" class="space-y-4">
+        <div>
+          <label for="name" class="block text-lg font-medium mb-2">Nome</label>
+          <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="email" class="block text-lg font-medium mb-2">Email</label>
+          <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="subject" class="block text-lg font-medium mb-2">Oggetto</label>
+          <input type="text" id="subject" name="subject" required class="w-full p-2 border border-gray-300 rounded">
+        </div>
+        <div>
+          <label for="message" class="block text-lg font-medium mb-2">Messaggio</label>
+          <textarea id="message" name="message" rows="5" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Invia Messaggio</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <nav class="mb-4">
+        <a href="about.html" class="mx-2 hover:underline">Chi siamo</a>
+        <a href="contact.html" class="mx-2 hover:underline">Contattaci</a>
+        <a href="privacy.html" class="mx-2 hover:underline">Informativa sulla privacy</a>
+        <a href="terms.html" class="mx-2 hover:underline">Termini e condizioni</a>
+      </nav>
+      <div class="text-sm">
+        <p>
+          Numero della società 00943935 <br>
+          Indirizzo: Lime St, Londra EC3M 7HR, Regno Unito <br>
+          Numero di telefono: 01632 960189 <br>
+        </p>
+        <br>
+        <p>
+          © 2025 Ultimate Agency Services. Tutti i diritti riservati.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        document.getElementById("form").innerHTML = '<img src="files/loading.gif" width="80">';
+  
+        setTimeout(() => {
+            document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700;">Grazie per il tuo messaggio.</p>';
+        }, 2000);
+    });
+  </script>
+</body>
+</html>

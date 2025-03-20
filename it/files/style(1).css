@@ -1,0 +1,493 @@
+/*
+Theme Name: Intime Child
+Theme URI: http://demo.casethemes.net/intime/
+Author: Case-Themes
+
+Description: Intime is created to provide modern solution for any business type. The theme is packed with large collection of beautifully designed homepages and a large number of inner page styles. Also, there are versatile and easily tailored portfolio templates that will give you full freedom to create the showcase you need. Moreover, Intime looks flawless on all devices, so your content will look equally amazing across all device types. Whether you need a personal theme or professional theme, Intime can be a perfect fit. Get it today and discover all the features one WordPress site needs.  
+Version: 1.4.6
+License: ThemeForest
+
+Template: intime
+Text Domain: intime-child
+Tags: business, consulting, consultant, agency, company, advertising, corporate, finance, financial, multipurpose, accountant, marketing, software, startup, modern, saas
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Top bar */
+#ct-header-wrap .ct-header-holder.style1 .ct-h-middle-item span, 
+#ct-header-wrap .ct-header-holder.style1 .ct-h-middle-item a{
+	font-family: Poppins!important;
+}
+#ct-header-wrap .ct-header-holder.style1 .ct-h-middle-item + .ct-h-middle-item{
+	margin-left: 20px!important;
+    padding-left: 20px!important;
+}
+#ct-header-wrap .ct-header-holder.style1 .ct-h-middle-item span{
+	font-size: 16px!important;
+}
+.ct-h-middle-icon .flaticon-clock:before{
+	content: "\f0e0";
+	font-family: "Font Awesome 5 Pro";
+	font-weight: 300;
+}
+.fac-pinterest:before{
+	content: "\f3c7"!important;
+}
+#ct-header-wrap .ct-header-holder.style1 .ct-h-middle-item:nth-child(2){
+	cursor: pointer;
+}
+#ct-header-wrap .ct-header-social.style1 a{
+	width: 36px!important;
+}
+#ct-header-wrap .ct-header-social.style1 {
+    padding: 0 7px!important;
+}
+
+/* END Top bar */
+
+/* Home */
+.ct-service-grid1 .item--title{
+	color: #191919;
+	min-height: 65px;
+}
+.ct-blog-grid-layout1 .item--title, .ct-blog-carousel-layout1 .item--title,
+.ct-testimonial-grid1 .item--title{
+	color: #191919;
+	font-weight: 700;
+}
+.ct-service-grid1 .item--content,
+.ct-service-carousel1 .item--content{
+	color: #191919!important;
+}
+.ct-service-grid1 .item--holder-hover .item--content,
+.ct-service-carousel1 .item--holder-bottom .item--content{
+	color: #fff!important;
+}
+.ct-testimonial-grid1 .item--description,
+.ct-accordion.layout1 .ct-ac-content{
+	color: #191919!important;
+}
+.ct-counter-layout1 .ct-counter-title{
+	min-height: 52px;
+}
+.manuall-btn{
+	padding: 0px 60px 0px 60px!important;
+    font-size: 13px!important;
+    font-weight: 700!important;
+    line-height: 53px!important;
+    margin-left: auto!important;
+    display: table!important;
+	transition: color ease 240ms;
+}
+.btn.btn-animate.manuall-btn:hover{
+	color: #191919!important;
+}
+.btn.btn-animate.manuall-btn:hover:before{
+	background: #fff!important;
+}
+/* END Home */
+
+/* About */
+.ct-team .item--title,
+.ct-service-carousel1 .item--title{
+	color: #191919;
+	font-weight: 700;
+}
+.ct-testimonial-carousel4 .item--title{
+	font-weight: 700!important;
+}
+.elementor-widget-image-gallery .gallery .gallery-item img{
+	width: 125px!important;
+}
+.ct-team .item--image img{
+	min-height: 292px;
+}
+.ct-team-carousel5 .item--title{
+	min-height: 52px;
+}
+/* END About */
+
+/* Case */
+.ct-portfolio-grid1 .item--title, 
+.ct-portfolio-carousel1 .item--title{
+	font-weight: 700;
+}
+/* END Case */
+
+/* Case inner */
+.ct-portfolio-detail .wg-title{
+	font-weight: 700;
+	color: #191919; 
+}
+.cases-ul{
+	margin: 0;
+}
+/* END Case inner */
+.sidebar-services .ct-portfolio-grid1 .grid-item-inner{
+	max-height: 250px;
+}
+@media only screen and (max-width: 768px) {
+	 .sidebar-services .ct-portfolio-grid1 .grid-item-inner{
+		max-height: none;
+	}
+}
+/* Blog */
+.btn-line-text span{
+	    border-bottom: 1px solid rgb(0 177 222 / 57%)!important;
+}
+.ct-item-meta li a:before{
+	background-color: rgb(0 177 222 / 57%)!important;
+}
+.ct-blog-grid .grid-item .item--content,
+.ct-blog-carousel-layout1 .item--content,
+.ct-blog-grid .grid-item .item--title a{
+	overflow: hidden !important;
+    text-overflow: ellipsis;
+    display: -webkit-box!important;
+    -webkit-block-overflow: 3!important;
+    -webkit-line-clamp: 3!important;
+    -webkit-box-orient: vertical!important;
+}
+.ct-date-box span:nth-child(1),
+.single-post .entry-footer label,
+blockquote cite{
+	font-family: Poppins!important;
+}
+article.post.type-post .entry-body .entry-content h2,
+article.post.type-post .entry-body .entry-content .h2{
+	color: #191919;
+	font-weight: 700;
+	font-size: 32px;
+} 
+article.post.type-post .entry-body .entry-content h3,
+article.post.type-post .entry-body .entry-content .h3{
+	color: #191919;
+	font-weight: 700;
+	font-size: 28px;
+} 
+article.post.type-post .entry-body .entry-content h4,
+article.post.type-post .entry-body .entry-content .h4{
+	color: #191919;
+	font-weight: 700;
+	font-size: 24px;
+} 
+article.post.type-post .entry-body .entry-content blockquote{
+	font-family: Poppins!important;
+	color: #191919;
+}
+.ct-blog-grid-layout1 .item--title, .ct-blog-carousel-layout1 .item--title{
+	font-size: 23px!important;
+	min-height: 112px;
+}
+.ct-item-meta li{
+	font-size: 12px!important;
+}
+.single-post #pagetitle .page-title{
+	    font-size: 50px;
+}
+/* END Blog */
+
+/* Newsletter */
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields:before, 
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields:after,
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields:before, 
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields:after{
+    font-weight: 400;
+    font-family: "font awesome 5 pro";
+    height: 46px;
+    width: 62px;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 46px;
+    z-index: 1;
+    overflow: hidden;
+}
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields:after,
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields:after{
+    z-index: 2;
+    content: '\f1d8';
+}
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields:before,
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields:before{
+	content: '';
+    background-color: var(--primary-color);
+}
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields input[type=submit],
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields input[type=submit]{
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 46px;
+    width: 62px;
+    padding: 0;
+    opacity: 0;
+    z-index: 3;
+}
+.ct-mailchimp1.style2 input[type=submit],
+.ct-mailchimp1.style1 input[type=submit]{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 22px;
+    line-height: 45px;
+    -webkit-transition: all 240ms linear 0ms;
+    -khtml-transition: all 240ms linear 0ms;
+    -moz-transition: all 240ms linear 0ms;
+    -ms-transition: all 240ms linear 0ms;
+    -o-transition: all 240ms linear 0ms;
+    transition: all 240ms linear 0ms;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden!important;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    z-index: 1;
+    text-transform: uppercase;
+    -webkit-box-shadow: none!important;
+    -khtml-box-shadow: none!important;
+    -moz-box-shadow: none!important;
+    -ms-box-shadow: none!important;
+    -o-box-shadow: none!important;
+    box-shadow: none!important;
+}
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields,
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields{
+    position: relative;
+    overflow: hidden;
+}
+.ct-mailchimp1.style2 input[type="email"],
+.ct-mailchimp1.style1 input[type="email"]{
+	height: 46px;
+}
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields:hover:after,
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields:hover:after{
+    -o-animation: toTopFromBottom .3s forwards;
+    -ms-animation: toTopFromBottom .3s forwards;
+    -webkit-animation: toTopFromBottom .3s forwards;
+    animation: toTopFromBottom .3s forwards;
+}
+.ct-mailchimp1.style2 .mc4wp-form .mc4wp-form-fields label,
+.ct-mailchimp1.style1 .mc4wp-form .mc4wp-form-fields label{
+	padding-top: 10px;
+	font-size: 15px;
+}
+.ct-mailchimp1.style2 .mc4wp-form-fields input[type="email"],
+.ct-mailchimp1.style1 .mc4wp-form-fields input[type="email"]{
+	height: 46px!important;
+}
+.ct-mailchimp1.style2 .mc4wp-form-fields .field-input + .field-input,
+.ct-mailchimp1.style1 .mc4wp-form-fields .field-input + .field-input{
+    margin-top: 0px!important;
+}
+.nice-select span.current {
+    line-height: 25px!important;
+}
+.wpcf7-form-control.wpcf7-acceptance{
+	padding-left: 0!important;
+	background-color: transparent!important;
+}
+.wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item{
+	margin-left: 0!important;
+}
+/* END Newsletter */
+
+/* Service inner menu */
+.ct-navigation-menu1.default a {
+    font-size: 17px!important;
+}
+.ct-service-grid1 .item--holder-hover:before {
+    background-color: rgba(0, 0, 0, 0.2)!important;
+}
+.quote-side{
+	display: block;
+    margin-top: 20px;
+}
+blockquote{
+	font-family: "Poppins", Sans-serif!important;
+}
+.ct-service-grid1 .item--content{
+	min-height: 80px!important;
+}
+.ct-service-grid1 .item--holder{
+	padding: 45px 25px 40px!important;
+}
+.hero-title-custom{
+	margin: 0 auto;
+}
+.elementor-19 .elementor-element.elementor-element-3e4b82f5 .ct-grid .item--content,
+.elementor-23 .elementor-element.elementor-element-6fe335e .ct-grid .item--content{
+	min-height: 130px!important;
+}
+/* Service inner END */
+
+/* EXTRA corrections*/
+#ct-header-wrap .ct-header-holder.style1,
+#ct-header-wrap .ct-header-social.style1,
+#ct-header-wrap .ct-header-button{
+	display: none!important;
+}
+#pagetitle {
+	background-color: #00587d!important;
+}
+.single-post #pagetitle:before,
+.single-service #pagetitle:before,
+.single-portfolio #pagetitle:before{
+	display: none!important;
+}
+.ct-portfolio-detail ul li span{
+	text-align: right;
+    max-width: 118px;
+}
+.ct-portfolio-detail ul li {
+    flex-wrap: nowrap;
+    align-items: baseline!important;
+}
+.ct-pagination-single .ct-pagination-archive{
+	display: none!important;
+}
+.ct-counter-layout1 .ct-counter-inner{
+	padding: 38px 33px 33px!important;
+}
+.ct-counter-layout1 .ct-counter-inner .ct-counter-desc{
+	min-height: 105px;
+}
+
+
+.newsletter_col_right{
+	display: flex;
+    flex-direction: column;
+}
+.newsletter_col_right .submit_border p{
+	border-bottom: 1px solid #fff;
+	display: flex;
+	border: none;
+	background: #fff;
+}
+.newsletter_col_right .submit_border input{
+	border: none;
+}
+.newsletter_col_right .submit_border input[type="email"]{
+	border: none;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px !important;
+	background: #fff;
+	color: #000000!important;
+	padding: 21px 15px 21px 30px;
+}
+.newsletter_col_right .submit_border input[type="email"]::-webkit-input-placeholder{
+	color: #000000;
+}
+.newsletter_col_right .submit_border input[type="email"]::-moz-placeholder{
+	color: #000000;
+}
+.newsletter_col_right .submit_border input[type="email"]:-ms-input-placeholder{
+	color: #000000;
+}
+.newsletter_col_right .submit_border input[type="email"]:-moz-placeholder{
+	color: #000000;
+}
+.newsletter_col_right .submit_border input[type="email"]:focus::-webkit-input-placeholder{
+  opacity: .4!important;
+}
+.newsletter_col_right .submit_border input[type="email"]:focus::-moz-placeholder{
+  opacity: .4!important;
+}
+.newsletter_col_right .submit_border input[type="email"]:focus:-ms-input-placeholder {
+  opacity: .4!important;
+}
+.newsletter_col_right .submit_border input[type="email"]:focus:-moz-placeholder{
+  opacity: .4!important;
+}
+.newsletter_col_right .submit_border .wpcf7-form-control-wrap .wpcf7-email{
+	border: none;
+	
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px !important;
+	background: none;
+}
+.newsletter_col_right .submit_border .your-email{
+	border: none;
+	width: calc(100% - 60px) !important;
+	display: inline-block !important;
+	vertical-align: top;
+	padding: 0px !important;
+	margin-bottom: 0px;
+}
+.newsletter_col_right .submit_border input[type="submit"]{
+	color: #fff!important;
+	border: none;
+	width: 60px;
+	font-size: 20px !important;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin: 0px;
+	background: #00b1de;
+	right: 0;
+	transition: all ease .5s;
+}
+.newsletter_col_right .submit_border input[type="submit"]:hover{
+	background: #00587d;
+}
+.newsletter_col_right input[type="checkbox"]:checked:after {
+    content: '\2714';
+    font-size: 13px;
+    position: absolute;
+    top: -3px;
+    left: 3px;
+    color: #111111;
+}
+.newsletter_col_right input[type="checkbox"] {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #E1E1E1;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 0;
+	margin-bottom: 0px;
+}
+.newsletter_col_right input[type="checkbox"]:checked{
+	background-color: #FFFFFF;
+}
+.newsletter_col_right .wpcf7-spinner{
+	display: none;
+}
+.newsletter_col_right .submit_border .wpcf7-form-control-wrap{
+	margin-bottom: 0!important;
+}
+.terms-sec a{
+	font-size: 14px;
+}
+/* EXTRA corrections END*/
+
+@media only screen and (max-width: 1200px) {
+	#ct-header-wrap .ct-header-branding .logo-mobile img{
+		max-height: 60px!important;	
+		max-width: 225px!important;
+		width: 100%!important;
+	}
+}
